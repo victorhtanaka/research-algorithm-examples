@@ -5,16 +5,6 @@ from typing import List, Dict
 
 
 def find_median_sorted_arrays(nums1: List[int], nums2: List[int]) -> float:
-    """
-    Encontra a mediana de dois arrays ordenados.
-    
-    Args:
-        nums1: Primeiro array ordenado
-        nums2: Segundo array ordenado
-        
-    Returns:
-        Mediana dos dois arrays combinados
-    """
     if len(nums1) > len(nums2):
         nums1, nums2 = nums2, nums1
     
@@ -45,16 +35,6 @@ def find_median_sorted_arrays(nums1: List[int], nums2: List[int]) -> float:
 
 
 def is_match(s: str, p: str) -> bool:
-    """
-    Implementa matching de regex com '.' e '*'.
-    
-    Args:
-        s: String de entrada
-        p: Padrão regex
-        
-    Returns:
-        True se s corresponde ao padrão p
-    """
     memo: Dict[tuple, bool] = {}
     
     def dp(i: int, j: int) -> bool:
@@ -77,15 +57,6 @@ def is_match(s: str, p: str) -> bool:
 
 
 def trap(height: List[int]) -> int:
-    """
-    Calcula quanto de água pode ser aprisionada entre barras.
-    
-    Args:
-        height: Array com alturas das barras
-        
-    Returns:
-        Quantidade total de água aprisionada
-    """
     if not height:
         return 0
     
@@ -111,9 +82,6 @@ def trap(height: List[int]) -> int:
 
 
 def max_sliding_window(nums: List[int], k: int) -> List[int]:
-    """
-    Encontra o máximo em cada janela deslizante de tamanho k.
-    """
     from collections import deque
     
     if not nums or k == 0:

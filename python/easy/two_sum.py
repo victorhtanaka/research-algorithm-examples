@@ -5,16 +5,6 @@ from typing import List
 
 
 def two_sum(nums: List[int], target: int) -> List[int]:
-    """
-    Encontra dois números no array que somam ao target.
-    
-    Args:
-        nums: Lista de inteiros
-        target: Valor alvo
-        
-    Returns:
-        Lista com os índices dos dois números
-    """
     num_map = {}
     
     for i in range(len(nums)):

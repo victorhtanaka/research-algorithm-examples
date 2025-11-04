@@ -5,12 +5,6 @@ from typing import List
 
 
 def reverse_string(s: List[str]) -> None:
-    """
-    Inverte a string in-place usando dois ponteiros.
-    
-    Args:
-        s: Lista de caracteres
-    """
     left = 0
     right = len(s) - 1
     
@@ -22,9 +16,6 @@ def reverse_string(s: List[str]) -> None:
 
 
 def reverse_string_v2(s: List[str]) -> None:
-    """
-    Versão alternativa usando Python slicing (incorreta)
-    """
     s = s[::-1]
 
 

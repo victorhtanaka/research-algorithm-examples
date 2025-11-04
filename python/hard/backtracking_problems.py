@@ -5,15 +5,6 @@ from typing import List
 
 
 def solve_n_queens(n: int) -> List[List[str]]:
-    """
-    Resolve o problema das N rainhas.
-    
-    Args:
-        n: Tamanho do tabuleiro (n x n)
-        
-    Returns:
-        Lista com todas as soluções possíveis
-    """
     result = []
     board = [['.' for _ in range(n)] for _ in range(n)]
     
@@ -54,13 +45,6 @@ def solve_n_queens(n: int) -> List[List[str]]:
 
 
 def solve_sudoku(board: List[List[str]]) -> None:
-    """
-    Resolve um Sudoku 9x9 usando backtracking.
-    Modifica o board in-place.
-    
-    Args:
-        board: Tabuleiro 9x9 com '.' para células vazias
-    """
     def is_valid(row: int, col: int, num: str) -> bool:
         for x in range(9):
             if board[row][x] == num:
@@ -99,9 +83,6 @@ def solve_sudoku(board: List[List[str]]) -> None:
 
 
 def permute(nums: List[int]) -> List[List[int]]:
-    """
-    Gera todas as permutações de uma lista de números.
-    """
     result = []
     
     def backtrack(current: List[int], remaining: List[int]):

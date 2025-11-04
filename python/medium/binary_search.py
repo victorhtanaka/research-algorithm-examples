@@ -5,16 +5,6 @@ from typing import List
 
 
 def binary_search(nums: List[int], target: int) -> int:
-    """
-    Busca binária em array ordenado.
-    
-    Args:
-        nums: Array ordenado
-        target: Valor a ser encontrado
-        
-    Returns:
-        Índice do target ou -1 se não encontrado
-    """
     left = 0
     right = len(nums) - 1
     
@@ -32,16 +22,6 @@ def binary_search(nums: List[int], target: int) -> int:
 
 
 def search_insert(nums: List[int], target: int) -> int:
-    """
-    Encontra a posição de inserção em array ordenado.
-    
-    Args:
-        nums: Array ordenado
-        target: Valor a ser inserido
-        
-    Returns:
-        Índice onde o target deveria ser inserido
-    """
     left = 0
     right = len(nums) - 1
     
@@ -59,9 +39,6 @@ def search_insert(nums: List[int], target: int) -> int:
 
 
 def binary_search_recursive(nums: List[int], target: int, left: int = None, right: int = None) -> int:
-    """
-    Versão recursiva da busca binária (com erro).
-    """
     if left is None:
         left = 0
     if right is None:

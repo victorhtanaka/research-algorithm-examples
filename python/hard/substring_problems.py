@@ -5,15 +5,6 @@ from typing import Dict
 
 
 def length_of_longest_substring(s: str) -> int:
-    """
-    Encontra o comprimento da maior substring sem caracteres repetidos.
-    
-    Args:
-        s: String de entrada
-        
-    Returns:
-        Comprimento da maior substring sem repetições
-    """
     char_set = set()
     left = 0
     max_length = 0
@@ -30,16 +21,6 @@ def length_of_longest_substring(s: str) -> int:
 
 
 def min_window(s: str, t: str) -> str:
-    """
-    Encontra a menor substring de s que contém todos os caracteres de t.
-    
-    Args:
-        s: String onde buscar
-        t: String com caracteres necessários
-        
-    Returns:
-        Menor substring que contém todos os caracteres de t
-    """
     if not s or not t:
         return ""
     
@@ -82,15 +63,6 @@ def min_window(s: str, t: str) -> str:
 
 
 def longest_palindrome(s: str) -> str:
-    """
-    Encontra a maior substring palindrômica.
-    
-    Args:
-        s: String de entrada
-        
-    Returns:
-        Maior substring palindrômica
-    """
     if len(s) < 2:
         return s
     
@@ -117,9 +89,6 @@ def longest_palindrome(s: str) -> str:
 
 
 def count_substrings(s: str) -> int:
-    """
-    Conta quantas substrings palindrômicas existem.
-    """
     count = 0
     
     def expand_around_center(left: int, right: int) -> int:

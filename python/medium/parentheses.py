@@ -5,15 +5,6 @@ from typing import List
 
 
 def is_valid(s: str) -> bool:
-    """
-    Verifica se os parênteses estão balanceados.
-    
-    Args:
-        s: String com parênteses, colchetes e chaves
-        
-    Returns:
-        True se estiver balanceado, False caso contrário
-    """
     stack = []
     pairs = {
         ')': '(',
@@ -36,15 +27,6 @@ def is_valid(s: str) -> bool:
 
 
 def generate_parenthesis(n: int) -> List[str]:
-    """
-    Gera todas as combinações válidas de n pares de parênteses.
-    
-    Args:
-        n: Número de pares de parênteses
-        
-    Returns:
-        Lista com todas as combinações válidas
-    """
     result = []
     
     def backtrack(current: str, open_count: int, close_count: int):
@@ -63,9 +45,6 @@ def generate_parenthesis(n: int) -> List[str]:
 
 
 def remove_invalid_parentheses(s: str) -> List[str]:
-    """
-    Remove o mínimo de parênteses inválidos para tornar a string válida.
-    """
     def is_valid_local(string):
         count = 0
         for char in string:

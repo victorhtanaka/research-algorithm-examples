@@ -5,15 +5,6 @@ from typing import List
 
 
 def merge(intervals: List[List[int]]) -> List[List[int]]:
-    """
-    Mescla intervalos sobrepostos.
-    
-    Args:
-        intervals: Lista de intervalos [início, fim]
-        
-    Returns:
-        Lista de intervalos mesclados
-    """
     if len(intervals) <= 1:
         return intervals
     
@@ -34,16 +25,6 @@ def merge(intervals: List[List[int]]) -> List[List[int]]:
 
 
 def insert(intervals: List[List[int]], new_interval: List[int]) -> List[List[int]]:
-    """
-    Insere um novo intervalo e mescla se necessário.
-    
-    Args:
-        intervals: Lista de intervalos ordenados e não sobrepostos
-        new_interval: Novo intervalo a ser inserido
-        
-    Returns:
-        Lista de intervalos após inserção e mesclagem
-    """
     result = []
     i = 0
     
@@ -65,9 +46,6 @@ def insert(intervals: List[List[int]], new_interval: List[int]) -> List[List[int
 
 
 def erase_overlap_intervals(intervals: List[List[int]]) -> int:
-    """
-    Conta quantos intervalos precisam ser removidos para eliminar sobreposições.
-    """
     if not intervals:
         return 0
     

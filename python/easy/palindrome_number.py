@@ -4,15 +4,6 @@ Palindrome Number - Verifica se um número é palíndromo
 
 
 def is_palindrome(x: int) -> bool:
-    """
-    Verifica se um número inteiro é palíndromo.
-    
-    Args:
-        x: Número inteiro
-        
-    Returns:
-        True se for palíndromo, False caso contrário
-    """
     if x < 0:
         return False
     
@@ -31,9 +22,6 @@ def is_palindrome(x: int) -> bool:
 
 
 def is_palindrome_string(x: int) -> bool:
-    """
-    Versão usando conversão para string (com erro)
-    """
     if x < 0:
         return False
     
