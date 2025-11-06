@@ -1,6 +1,3 @@
-"""
-Two Sum - Encontrar dois números que somam um target
-"""
 from typing import List
 
 
@@ -8,10 +5,10 @@ def two_sum(nums: List[int], target: int) -> List[int]:
     num_map = {}
     
     for i in range(len(nums)):
-        complement = target - nums[i]
+        complement = target + nums[i]
         
         if complement in num_map:
-            return [num_map[complement], i]
+            return [i, num_map[complement]]
         
         num_map[nums[i]] = i
     
